@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Verify that valid user able to login into Mercury Tours application by using valid username and password">
+  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="urlnm" value="http://newtours.demoaut.com/mercurywelcome.php"></parameter>
+  <parameter name="timeoutsec" value="15"></parameter>
+  <parameter name="usernm" value="Suvidyap1"></parameter>
+  <parameter name="passwd" value="P@ssword1"></parameter>
+    <classes>    
+      <class name="mt.mstr.modules.Launch">
+      <methods>
+      <include name="executeLaunch"></include>
+      </methods>
+      </class>
+       <class name="mt.mstr.modules.Login">
+      <methods>
+      <include name="executeLoginwithValidds"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test thread-count="5" name="Verify that valid user not able to login into Mercury Tours application by using invalid username and password">
+  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="urlnm" value="http://newtours.demoaut.com/mercurywelcome.php"></parameter>
+  <parameter name="timeoutsec" value="15"></parameter>
+  <parameter name="invalidusernm" value="Suvidyap"></parameter>
+  <parameter name="invalidpasswd" value="P@ssword"></parameter>
+    <classes>    
+      <class name="mt.mstr.modules.Launch">
+      <methods>
+      <include name="executeLaunch"></include>
+      </methods>
+      </class>
+       <class name="mt.mstr.modules.Login">
+      <methods>
+      <include name="executeLoginwithInvalidds"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

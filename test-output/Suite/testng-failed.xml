@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Verify that valid user able to login into Mercury Tours application by using valid username and password(failed)">
+    <parameter name="usernm" value="Suvidyap1"/>
+    <parameter name="invalidpasswd" value="P@ssword"/>
+    <parameter name="invalidusernm" value="Suvidyap"/>
+    <parameter name="passwd" value="P@ssword1"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="urlnm" value="http://newtours.demoaut.com/mercurywelcome.php"/>
+    <parameter name="timeoutsec" value="15"/>
+    <classes>
+      <class name="mt.mstr.modules.Login">
+        <methods>
+          <include name="executeLoginwithValidds" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- mt.mstr.modules.Login -->
+    </classes>
+  </test> <!-- Verify that valid user able to login into Mercury Tours application by using valid username and password(failed) -->
+</suite> <!-- Failed suite [Suite] -->
