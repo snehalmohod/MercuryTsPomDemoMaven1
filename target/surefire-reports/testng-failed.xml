@@ -20,7 +20,7 @@
       </class> <!-- mt.mstr.modules.Launch -->
     </classes>
   </test> <!-- Verify that valid user able to login into Mercury Tours application by using valid username and password(failed) -->
-  <test thread-count="5" verbose="0" name="Verify that valid user not able to login into Mercury Tours application by using invalid username and password(failed)">
+  <test thread-count="5" verbose="0" name="Verify that invalid user not able to login into Mercury Tours application by using invalid username and password(failed)">
     <parameter name="invalidpasswd" value="P@ssword"/>
     <parameter name="invalidusernm" value="Suvidyap"/>
     <parameter name="browser" value="chrome"/>
@@ -29,14 +29,9 @@
     <classes>
       <class name="mt.mstr.modules.Login">
         <methods>
-          <include name="executeLoginwithInvalidds" invocation-numbers="0"/>
+          <include name="executeLoginwithInvalidds1" invocation-numbers="0"/>
         </methods>
       </class> <!-- mt.mstr.modules.Login -->
-      <class name="mt.mstr.modules.Launch">
-        <methods>
-          <include name="executeLaunch" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- mt.mstr.modules.Launch -->
     </classes>
-  </test> <!-- Verify that valid user not able to login into Mercury Tours application by using invalid username and password(failed) -->
+  </test> <!-- Verify that invalid user not able to login into Mercury Tours application by using invalid username and password(failed) -->
 </suite> <!-- Failed suite [Suite] -->

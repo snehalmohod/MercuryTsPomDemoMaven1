@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>E:\TestingCode\MercuryTsPomDemo\testng2.xml</span>
+                    <span>E:\TestingCode\MercuryTsPomDemo\testng3.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,36 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 4 failed,   </span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mt.mstr.modules.Launch" hash-for-method="executeLaunch(chrome, http://newtours.demoaut.com/mercurywelcome.php, 15)">executeLaunch(chrome, http://newtours.demoaut.com/mercurywelcome.php, 15)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mt.mstr.modules.Launch" hash-for-method="executeLaunch(chrome, http://newtours.demoaut.com/mercurywelcome.php, 15)">executeLaunch(chrome, http://newtours.demoaut.com/mercurywelcome.php, 15)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mt.mstr.modules.Login" hash-for-method="executeLoginwithInvalidds1(Suvidyap, P@ssword)">executeLoginwithInvalidds1(Suvidyap, P@ssword)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mt.mstr.modules.Login" hash-for-method="executeLoginwithInvalidds(Suvidyap, P@ssword)">executeLoginwithInvalidds(Suvidyap, P@ssword)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="mt.mstr.modules.Login" hash-for-method="executeLoginwithValidds(Suvidyap1, P@ssword1)">executeLoginwithValidds(Suvidyap1, P@ssword1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,26 +127,18 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">mt.mstr.modules.Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="executeLoginwithInvalidds(Suvidyap, P@ssword)">
-                  </a> <!-- executeLoginwithInvalidds(Suvidyap, P@ssword) -->
-                  <span class="method-name">executeLoginwithInvalidds</span>
+                  <a name="executeLoginwithInvalidds1(Suvidyap, P@ssword)">
+                  </a> <!-- executeLoginwithInvalidds1(Suvidyap, P@ssword) -->
+                  <span class="method-name">executeLoginwithInvalidds1</span>
                   <span class="parameters">(Suvidyap, P@ssword)</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
-	at mt.mstr.pages.Loginpage.enterUsername(Loginpage.java:33)
-	at mt.mstr.modules.Login.executeLoginwithInvalidds(Login.java:41)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -160,21 +147,13 @@
                   </a> <!-- executeLoginwithValidds(Suvidyap1, P@ssword1) -->
                   <span class="method-name">executeLoginwithValidds</span>
                   <span class="parameters">(Suvidyap1, P@ssword1)</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy6.sendKeys(Unknown Source)
-	at mt.mstr.pages.Loginpage.enterUsername(Loginpage.java:33)
-	at mt.mstr.modules.Login.executeLoginwithValidds(Login.java:22)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">mt.mstr.modules.Launch</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -184,38 +163,14 @@
                   </a> <!-- executeLaunch(chrome, http://newtours.demoaut.com/mercurywelcome.php, 15) -->
                   <span class="method-name">executeLaunch</span>
                   <span class="parameters">(chrome, http://newtours.demoaut.com/mercurywelcome.php, 15)</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: E:\Java Programs\Eclipse Java\MercuryTsPomDemo\src\test\resources\config.properties (The system cannot find the path specified)
-	at java.io.FileInputStream.open(Native Method)
-	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
-	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
-	at mt.mstr.utility.LaunchApp.openBrowser(LaunchApp.java:20)
-	at mt.mstr.modules.Launch.executeLaunch(Launch.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="executeLaunch(chrome, http://newtours.demoaut.com/mercurywelcome.php, 15)">
-                  </a> <!-- executeLaunch(chrome, http://newtours.demoaut.com/mercurywelcome.php, 15) -->
-                  <span class="method-name">executeLaunch</span>
-                  <span class="parameters">(chrome, http://newtours.demoaut.com/mercurywelcome.php, 15)</span>
-                  <div class="stack-trace">java.io.FileNotFoundException: E:\Java Programs\Eclipse Java\MercuryTsPomDemo\src\test\resources\config.properties (The system cannot find the path specified)
-	at java.io.FileInputStream.open(Native Method)
-	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
-	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
-	at mt.mstr.utility.LaunchApp.openBrowser(LaunchApp.java:20)
-	at mt.mstr.modules.Launch.executeLaunch(Launch.java:21)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\TestingCode\MercuryTsPomDemo\testng2.xml</span>
+            <span class="header-content">E:\TestingCode\MercuryTsPomDemo\testng3.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -241,25 +196,20 @@
       &lt;/class&gt; &lt;!-- mt.mstr.modules.Login --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Verify that valid user able to login into Mercury Tours application by using valid username and password --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Verify that valid user not able to login into Mercury Tours application by using invalid username and password&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Verify that invalid user not able to login into Mercury Tours application by using invalid username and password&quot;&gt;
     &lt;parameter name=&quot;invalidpasswd&quot; value=&quot;P@ssword&quot;/&gt;
     &lt;parameter name=&quot;invalidusernm&quot; value=&quot;Suvidyap&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;urlnm&quot; value=&quot;http://newtours.demoaut.com/mercurywelcome.php&quot;/&gt;
     &lt;parameter name=&quot;timeoutsec&quot; value=&quot;15&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;mt.mstr.modules.Launch&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;executeLaunch&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- mt.mstr.modules.Launch --&gt;
       &lt;class name=&quot;mt.mstr.modules.Login&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;executeLoginwithInvalidds&quot;/&gt;
+          &lt;include name=&quot;executeLoginwithInvalidds1&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- mt.mstr.modules.Login --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Verify that valid user not able to login into Mercury Tours application by using invalid username and password --&gt;
+  &lt;/test&gt; &lt;!-- Verify that invalid user not able to login into Mercury Tours application by using invalid username and password --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -274,7 +224,7 @@
                 <span class="test-name">Verify that valid user able to login into Mercury Tours application by using valid username and password (2 classes)</span>
               </li>
               <li>
-                <span class="test-name">Verify that valid user not able to login into Mercury Tours application by using invalid username and password (2 classes)</span>
+                <span class="test-name">Verify that invalid user not able to login into Mercury Tours application by using invalid username and password (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -300,28 +250,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'executeLoginwithValidds')
-data.setCell(0, 2, 'mt.mstr.modules.Login')
-data.setCell(0, 3, 62);
+data.setCell(0, 1, 'executeLaunch')
+data.setCell(0, 2, 'mt.mstr.modules.Launch')
+data.setCell(0, 3, 40323);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'executeLaunch')
-data.setCell(1, 2, 'mt.mstr.modules.Launch')
-data.setCell(1, 3, 24);
+data.setCell(1, 1, 'executeLoginwithValidds')
+data.setCell(1, 2, 'mt.mstr.modules.Login')
+data.setCell(1, 3, 17502);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'executeLaunch')
-data.setCell(2, 2, 'mt.mstr.modules.Launch')
-data.setCell(2, 3, 1);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'executeLoginwithInvalidds')
-data.setCell(3, 2, 'mt.mstr.modules.Login')
-data.setCell(3, 3, 0);
+data.setCell(2, 1, 'executeLoginwithInvalidds1')
+data.setCell(2, 2, 'mt.mstr.modules.Login')
+data.setCell(2, 3, 5767);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 87 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -346,7 +292,7 @@ return data;
                 <br/>
                 <span class="ignored-method-name">executeLoginwithInvalidds</span>
                 <br/>
-                <span class="ignored-method-name">executeLoginwithInvalidds1</span>
+                <span class="ignored-method-name">executeLoginwithInvalidds</span>
                 <br/>
                 <span class="ignored-method-name">executeLoginwithInvalidds1</span>
                 <br/>
@@ -362,8 +308,6 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">mt.mstr.modules.Launch</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">executeLaunch(chrome, http://newtours.demoaut.com/mercurywelcome.php, 15)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
@@ -371,28 +315,12 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">mt.mstr.modules.Login</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">executeLoginwithValidds(Suvidyap1, P@ssword1)</span>
-                <span class="method-start">34 ms</span>
+                <span class="method-start">40651 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">mt.mstr.modules.Launch</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">executeLaunch(chrome, http://newtours.demoaut.com/mercurywelcome.php, 15)</span>
-                <span class="method-start">612 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">mt.mstr.modules.Login</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">executeLoginwithInvalidds(Suvidyap, P@ssword)</span>
-                <span class="method-start">613 ms</span>
+                <span class="method-name">executeLoginwithInvalidds1(Suvidyap, P@ssword)</span>
+                <span class="method-start">59359 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

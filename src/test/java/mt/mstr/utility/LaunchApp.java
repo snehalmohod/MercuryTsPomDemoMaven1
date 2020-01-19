@@ -17,7 +17,7 @@ public class LaunchApp
 	
 	public void openBrowser(String browsernm) throws IOException
 	{
-		FileInputStream fis= new FileInputStream("E:\\Java Programs\\Eclipse Java\\MercuryTsPomDemo\\src\\test\\resources\\config.properties");
+		FileInputStream fis= new FileInputStream("E:\\TestingCode\\MercuryTsPomDemo\\src\\test\\resources\\config.properties");
 		prop.load(fis);
 		if(prop.getProperty("browser").equalsIgnoreCase(browsernm))
 		{
